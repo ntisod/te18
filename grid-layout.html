@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-<style>
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid-layout</title>
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item5 { grid-area: footer; }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-</style>
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  </style>
 </head>
 <body>
 
-<h1>Positionering</h1>
+  <h1>Positionering</h1>
 
-<ul>
-    <li>Att arbeta med positionering som vi gjorde i måndags är relativt krångligt.</li>
-    <li>Ibland har man därför exeperimenterat med att använda tabeller för att få en smidig layout.</li>
-    <li>Det är dock inte semantiskt riktigt att använda &lt;table&gt;-elementet för detta.</li>
-    <li>Det som kommit på sistone är istället Grid-layout.</li>
-</ul>
+  <ul>
+      <li>Att arbeta med positionering som vi gjorde i måndags är relativt krångligt.</li>
+      <li>Ibland har man därför exeperimenterat med att använda tabeller för att få en smidig layout.</li>
+      <li>Det är dock inte semantiskt riktigt att använda &lt;table&gt;-elementet för detta.</li>
+      <li>Det som kommit på sistone är istället Grid-layout.</li>
+  </ul>
 
-<h1>Grid Layout</h1>
+  <h1>Grid Layout</h1>
 
-<p>Den här layouten innehåller sex kolumner och tre rader:</p>
+  <p>Den här layouten innehåller sex kolumner och tre rader:</p>
 
-<div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
-</div>
+  <div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Menu</div>
+    <div class="item3">Main</div>  
+    <div class="item4">Right</div>
+    <div class="item5">Footer</div>
+  </div>
 
-<p><small>Källa: <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">w3schools</a></small></p>
+  <p><small>Källa: <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">w3schools</a></small></p>
 </body>
 </html>
