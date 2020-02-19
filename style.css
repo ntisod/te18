@@ -1,4 +1,52 @@
 
+/*
+static
+relative
+fixed
+absolute
+sticky
+*/
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #F0F;
+    position: static;
+    width:100%;
+}
+
+header img{
+    float: left;
+}
+
+nav{
+    background-color: greenyellow;
+    position: static;
+    
+}
+section{
+    background-color: hotpink;
+    width:60%;
+    float: left;
+}
+article{
+    background-color: indianred;
+    width: 60%;
+    float: left;
+}
+aside{
+    background-color: lightgreen;
+    width:40%;
+    float: right;
+}
+footer{
+    background-color: mediumturquoise;
+    clear: left;
+}
+
+
+/* Tabellspecifik css */
 table{
     border-collapse: collapse;
 }

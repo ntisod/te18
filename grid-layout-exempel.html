@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout</title>
+    <style>
+        *{
+            /* Skapar en ram runt alla element */
+            border: 1px solid #ccf;
+        }
+        /* Skapar en grid-layout med 6 kolumner med jämnt fördelad bredd. */
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+
+        /* Talar om att detta element ska börja med kolumn 1 och spänna över 6 kolumner */
+        header{
+            grid-column-start: 1;
+            grid-column-end: span 6;
+        }
+
+        /* Talar om att detta element ska börja med rad 2 och spänna över 2 rader. */
+        nav{
+            grid-row: 2 / span 2;
+        }
+
+        /* Talar om att detta element ska börja med rad 2, kolumn 2 och spänna över 1 rad och 3 kolumner. */
+        main{
+            grid-area: 2 / 2 / span 1 / span 3;
+        }
+        
+        /* Talar om att detta element ska börja med kolumn 5 och spänna över 2 kolumner. */
+        aside{
+            grid-column: 5 / span 2;
+        }
+        /* Talar om att detta element ska börja med kolumn 2 och spänna över 5 kolumner. */
+        footer{
+            grid-column: 2 / span 5;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>
+        <small>
+            Källa: <a href="https://www.w3schools.com/css/css_grid.asp">w3schools</a>
+        </small>
+    </footer>
+</body>
+</html>
