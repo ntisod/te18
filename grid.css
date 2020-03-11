@@ -1,0 +1,47 @@
+body{
+    display: grid;
+}
+header{background-color: olive;}
+nav{background-color: cyan;}
+main{background-color: maroon;}
+section{background-color: salmon;}
+article{background-color: orange;}
+aside{background-color: navajowhite;}
+footer{background-color: orchid;}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    body{grid-template-columns: 80px auto;}
+    header{grid-column: 1/ span 2;}
+    nav{grid-row: 2 / span 3;}
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktops: */
+    body{grid-template-columns: 80px 800px auto;}
+    header{grid-column: 1 / span 3;}
+    nav{grid-row: 2 / span 2;}
+    aside{grid-column: 3 / span 1;}
+    footer{grid-column: 2/span 2;}
+}
+
+/* Menyn */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantik</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
     <header>
@@ -13,21 +13,31 @@
     </header>
     <nav>
         <ul>
-            <li>Nav 1</li>
-            <li>Nav 2</li>
-            <li>Nav 3</li>
-            <li>Nav 4</li>
+            <li><a href="http://">Alt 1</a></li>
+            <li><a href="http://">Alt 2</a></li>
+            <li><a href="http://">Alt 3</a></li>
+            <li><a href="http://">Alt 4</a></li>
         </ul>
     </nav>    
-    <section>
-        <h2>Section</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laboriosam nihil ut aliquid perspiciatis quibusdam eos rem, autem cupiditate sapiente, mollitia enim neque amet quisquam. Sed ratione officiis odio. Praesentium?</p>
-    </section>
-    <article>
-        <h2>Article</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsam, ex reiciendis non consequuntur quae quod illo debitis delectus adipisci quo maxime, eos nesciunt blanditiis, inventore vero error a laboriosam?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsam, ex reiciendis non consequuntur quae quod illo debitis delectus adipisci quo maxime, eos nesciunt blanditiis, inventore vero error a laboriosam?</p>
-    </article>
+    <main>
+        <section>
+            <h2>Section</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laboriosam nihil ut aliquid perspiciatis quibusdam eos rem, autem cupiditate sapiente, mollitia enim neque amet quisquam. Sed ratione officiis odio. Praesentium?</p>
+        </section>
+        <article>
+            <h2>Article</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsam, ex reiciendis non consequuntur quae quod illo debitis delectus adipisci quo maxime, eos nesciunt blanditiis, inventore vero error a laboriosam?</p>
+            <a href="bilder/blommor.jpg">
+                <picture>
+                    <source srcset="bilder/blommor-480px.jpg" media="(max-width: 600px)">
+                    <source srcset="bilder/blommor-800px.jpg" media="(max-width: 1024px)">
+                    <source srcset="bilder/blommor-1024px.jpg">
+                    <img src="bilder/blommor.jpg" alt="Blommor">
+                </picture>
+            </a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsam, ex reiciendis non consequuntur quae quod illo debitis delectus adipisci quo maxime, eos nesciunt blanditiis, inventore vero error a laboriosam?</p>
+        </article>
+    </main>
     <aside>
         <p>Aside</p>
     </aside>
