@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
-
-
+    <style>
+        img{height: 480px;}
+    </style>
+    <script>
+        var value = true;
+        function changeHeader(){
+            
+            if(value==true){
+                document.getElementById("dom-rubrik").innerHTML = "DOM-modellen";
+                value=false;
+            }else{
+                document.getElementById("dom-rubrik").innerHTML = "Document Object Model";
+                value="1";
+            }
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </head>
 <body>
-    <h1>Document Object Model</h1>
-
-
+    <h1 id="dom-rubrik" ondblclick="changeHeader()">Document Object Model</h1>
+    <figure>
+        <img src="../bilder/DOM-model.svg" alt="DOM-modellen" >
+        <figcaption>
+            <small>
+                Av <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&amp;redlink=1" class="new" title="User:Eib (page does not exist)">Birger Eriksson</a> - <span class="int-own-work" lang="sv">Eget arbete</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Länk</a>
+            </small>
+        </figcaption>
+    </figure>
 </body>
 </html>
