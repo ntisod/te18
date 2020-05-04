@@ -20,6 +20,7 @@ header img{
     float: left;
 }
 
+/* navigering */
 nav{
     background-color: greenyellow;
     position: static;
@@ -28,8 +29,23 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
 }
 
+nav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Sektioner och artiklar */
 section{
     background-color: hotpink;
     width:60%;
