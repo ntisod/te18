@@ -23,8 +23,13 @@ header img{
 nav{
     background-color: greenyellow;
     position: static;
-    
 }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 section{
     background-color: hotpink;
     width:60%;
@@ -44,6 +49,8 @@ footer{
     background-color: mediumturquoise;
     clear: left;
 }
+
+
 
 
 /* Tabellspecifik css */
